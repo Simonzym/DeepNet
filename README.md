@@ -12,3 +12,7 @@
 4. rnn.py is used for building recurrent neural networks.
 5. get_data.py is used for building python data sets (e.g dictionaries and pandas) using the exisiting data sets.
 6. featues extraction.py is used for building CNN on original data (PET images) and dimension reduction.
+
+## Registration
+### The raw PET images directly downloaded from ADNI website are registered to a template. This is done in a Ubuntu 2.0 Window subsystem.
+1. reg.R is used to register PET images to an AAL template and extract regions of interest.
