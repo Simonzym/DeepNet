@@ -1,0 +1,6 @@
+library(ANTsR)
+library(extrantsr)
+img = antsImageRead('ADNI_003_S_1074_PT_Coreg,_Avg,_Std_Img_and_Vox_Siz,_Uniform_Resolution_Br_20070312161623427_1_S27694_I44225.nii')
+n3img = bias_correct(img, correction = 'N3', retimg = TRUE)
+orthographic(n3img)
+regn3 = ants_regwrite(filename = n3img, template.file = aal.template, typeofTransform = 'Affine')
